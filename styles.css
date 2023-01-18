@@ -1,10 +1,7 @@
 html,
 body {
-    position: relative;
     height: 100%;
-    padding-top: 200px;
 }
-
 body {
     position: relative;
 
@@ -13,11 +10,15 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    background-image: url("./assets/bg2.jpg");
+    background-size: 700px ;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 .swiper {
     width: 100%;
-    max-height: px;
+    max-height:100%;
 
 }
 
@@ -45,6 +46,7 @@ body {
     width: 100%;
     height: 30%;
     object-fit: cover;
+    
 }
 
 
@@ -83,9 +85,7 @@ body {
     width: 140px;
 }
 
-.footer1 {
-    margin-top: 500px;
-}
+
 
 .Topic {
     color: rgb(246, 0, 0);
@@ -145,9 +145,6 @@ body {
     padding: inherit;
 }
 
-#section0{
-    max-height: 242px;
-}
 #section1 {
     padding-top: 25px;
     color: rgb(17, 16, 16);
@@ -187,7 +184,9 @@ body {
 #conImg{
 width: 80%;
 }
-
+#ex1Img{
+    width: 20%;
+}
 #video {
     width: 100%;
     max-height: 325px;
@@ -198,8 +197,6 @@ width: 80%;
     padding-top: 10px;
     color: rgb(21, 20, 20);
     background-color: #A6E3E9;
-
-
 }
 
 .sec3button {
@@ -214,7 +211,6 @@ width: 80%;
 
 #Problem {
     font-size: 20px;
-    text-align: center;
     margin: 10px;
     background-color: #fff2ccff;
     padding: 10px;
@@ -224,6 +220,7 @@ width: 80%;
     padding-top: 10px;
     color: rgb(9, 9, 9);
     background-color: #71C9CE;
+    overflow: scroll;
     
 }
 #section5{
@@ -257,9 +254,9 @@ width: 80%;
 .sec4end {
     font-size: 20px;
     text-align: center;
-    background-color: #fff2ccff;
-    height: 100px;
-    padding: auto;
+    color: #fff;
+    height: 50px;
+    padding: 5px;
     margin: 20px -10px 20px 0;
 }
 
@@ -294,6 +291,13 @@ width: 80%;
     width: 30px;
     height: 30px;
 }
+#proImg{
+    float: left;
+    margin: 0 10px 0 -25px;
+    
+    width: 25px;
+}
+
 .custom-popover {
     --bs-popover-max-width: 200px;
     --bs-popover-border-color: var(--bs-primary);
@@ -309,4 +313,7 @@ h3 {
 
 .hidden {
     display: none;
+}
+.modal-backdrop.show{
+    z-index: auto;
 }
